@@ -36,7 +36,6 @@ public class CombinarCorrespondencia {
                 String line = scanner.nextLine();
                 String[] fields = line.split(",");
                 if (fields.length != 5) {
-                    // Si falta algún dato en se genera un archivo de error
                     String outputFileName = outputFolderPath + File.separator + "ERROR_" + "template-" + fields[0] + ".txt";
                     FileWriter errorWriter = new FileWriter(outputFileName);
                     errorWriter.write("ERROR: Datos insuficientes en data.csv");
